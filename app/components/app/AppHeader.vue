@@ -1,9 +1,25 @@
 <script setup lang="ts">
 const isScrolled = ref(false);
 const isMobileMenuOpen = ref(false);
+const isHeaderVisible = ref(true);
+const lastScrollY = ref(0);
 
 const handleScroll = () => {
-  isScrolled.value = window.scrollY > 20;
+  const currentScrollY = window.scrollY;
+
+  // Determine if scrolled
+  isScrolled.value = currentScrollY > 20;
+
+  // Show/hide header based on scroll direction
+  if (currentScrollY > lastScrollY.value && currentScrollY > 100) {
+    // Scrolling down & past 100px - hide header
+    isHeaderVisible.value = false;
+  } else {
+    // Scrolling up or at top - show header
+    isHeaderVisible.value = true;
+  }
+
+  lastScrollY.value = currentScrollY;
 };
 
 const toggleMobileMenu = () => {
@@ -34,12 +50,11 @@ onUnmounted(() => {
 
 <template>
   <header
-    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-md"
     :class="{
-      'bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg shadow-lg': isScrolled,
-      'bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-lg':
-        isMobileMenuOpen,
-      'bg-transparent': !isScrolled && !isMobileMenuOpen,
+      'shadow-lg': isScrolled,
+      '-translate-y-full': !isHeaderVisible,
+      'translate-y-0': isHeaderVisible,
     }"
   >
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -93,7 +108,6 @@ onUnmounted(() => {
           <UButton
             to="/contact-us"
             color="primary"
-            variant="soft"
             size="md"
             icon="i-lucide-phone"
             class="transition-all duration-300 hover:scale-105"
@@ -253,9 +267,6 @@ onUnmounted(() => {
       </div>
     </div>
   </Transition>
-
-  <!-- Spacer to prevent content from going under fixed header -->
-  <div class="h-16 md:h-20" />
 </template>
 
 <style scoped>

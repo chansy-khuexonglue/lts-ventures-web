@@ -11,114 +11,103 @@ const items = ref([
     children: [
       {
         label: "About Us",
-        description: "Fully styled and customizable components for Nuxt.",
+        description:
+          "Learn about our mission to empower communities through sustainable microfinance",
         icon: "i-lucide-house",
-        to: "/docs/composables/define-shortcuts",
+        to: "/about-us",
       },
       {
         label: "Management Team",
         description:
-          "Learn how to install and configure Nuxt UI in your application.",
-        icon: "i-lucide-cloud-download",
+          "Meet the leaders driving innovation in rural financial services",
+        icon: "i-lucide-users",
       },
       {
         label: "Awards",
-        icon: "i-lucide-smile",
+        icon: "i-lucide-award",
         description:
-          "You have nothing to do, @nuxt/icon will handle it automatically.",
+          "Recognition for our impact in community development and microfinance",
       },
       {
         label: "Publications",
-        icon: "i-lucide-swatch-book",
+        icon: "i-lucide-book",
         description:
-          "Choose a primary and a neutral color from your Tailwind CSS theme.",
+          "Research and insights on microfinance and rural development",
       },
     ],
   },
   {
     label: "What We Do",
-    icon: "i-lucide-database",
-    to: "/docs/composables",
+    icon: "i-lucide-briefcase",
+    to: "/what-we-do",
     children: [
       {
         label: "Village Banking",
-        icon: "i-lucide-file-text",
-        description: "Define shortcuts for your application.",
-        to: "/docs/composables/define-shortcuts",
+        icon: "i-lucide-home",
+        description:
+          "Community-based financial services bringing banking to rural areas",
+        to: "/what-we-do#village-banking",
       },
       {
         label: "Village's Feedback",
-        icon: "i-lucide-file-text",
-        description: "Display a modal/slideover within your application.",
-        to: "/docs/composables/use-overlay",
+        icon: "i-lucide-message-square",
+        description: "Real stories and testimonials from communities we serve",
+        to: "/what-we-do#feedback",
       },
       {
         label: "LTS Growth",
-        icon: "i-lucide-file-text",
-        description: "Display a toast within your application.",
-        to: "/docs/composables/use-toast",
+        icon: "i-lucide-trending-up",
+        description:
+          "Sustainable growth programs for small businesses and entrepreneurs",
+        to: "/what-we-do#growth",
       },
       {
         label: "Projects",
-        icon: "i-lucide-file-text",
-        description: "Display a toast within your application.",
-        to: "/docs/composables/use-toast",
+        icon: "i-lucide-folder",
+        description:
+          "Community development initiatives transforming rural Laos",
+        to: "/what-we-do#projects",
       },
       {
         label: "Trainings",
-        icon: "i-lucide-file-text",
-        description: "Display a toast within your application.",
-        to: "/docs/composables/use-toast",
+        icon: "i-lucide-graduation-cap",
+        description:
+          "Financial literacy and entrepreneurship training programs",
+        to: "/what-we-do#trainings",
       },
     ],
   },
   {
     label: "Lan Xang Banker",
-    icon: "i-lucide-box",
-    to: "/docs/components",
+    icon: "i-lucide-smartphone",
+    to: "/lan-xang-banker",
     children: [
       {
         label: "Lan Xang Banker Platform",
-        icon: "i-lucide-file-text",
-        description: "Use NuxtLink with superpowers.",
-        to: "/docs/components/link",
+        icon: "i-lucide-smartphone",
+        description:
+          "Digital banking platform bringing financial services to your mobile",
+        to: "/lan-xang-banker",
       },
       {
         label: "Credit Scoring",
-        icon: "i-lucide-file-text",
-        description: "Display a modal within your application.",
-        to: "/docs/components/modal",
+        icon: "i-lucide-chart-bar",
+        description:
+          "Advanced credit assessment for fair and transparent lending",
+        to: "/lan-xang-banker#credit-scoring",
       },
       {
         label: "AI Loan Decisioning & Automation",
-        icon: "i-lucide-file-text",
-        description: "Display a list of links.",
-        to: "/docs/components/navigation-menu",
-      },
-      {
-        label: "Pagination",
-        icon: "i-lucide-file-text",
-        description: "Display a list of pages.",
-        to: "/docs/components/pagination",
-      },
-      {
-        label: "Popover",
-        icon: "i-lucide-file-text",
+        icon: "i-lucide-brain",
         description:
-          "Display a non-modal dialog that floats around a trigger element.",
-        to: "/docs/components/popover",
-      },
-      {
-        label: "Progress",
-        icon: "i-lucide-file-text",
-        description: "Show a horizontal bar to indicate task progression.",
-        to: "/docs/components/progress",
+          "Smart automation for faster, more accurate loan processing",
+        to: "/lan-xang-banker#ai-decisioning",
       },
     ],
   },
   {
     label: "Career",
-    icon: "material-symbols:work-outline",
+    icon: "i-lucide-briefcase",
     to: "/careers",
   },
 ]);

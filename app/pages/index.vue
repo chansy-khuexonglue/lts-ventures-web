@@ -259,7 +259,7 @@ function scrollToSection(id: string) {
     <section
       id="hero"
       data-section="hero"
-      class="relative min-h-screen flex items-center justify-center overflow-hidden"
+      class="relative h-screen flex items-center justify-center overflow-hidden"
     >
       <!-- Background Image with Overlay -->
       <div class="absolute inset-0 overflow-hidden">
@@ -346,7 +346,6 @@ function scrollToSection(id: string) {
         </div> -->
       </div>
     </section>
-
     <!-- Stats Section -->
     <section
       id="stats"
@@ -454,7 +453,7 @@ function scrollToSection(id: string) {
                     Trusted Partner
                   </div>
                   <div class="text-sm text-gray-600 dark:text-gray-400">
-                    Since 1973
+                    Since 2022
                   </div>
                 </div>
               </div>
@@ -793,114 +792,6 @@ function scrollToSection(id: string) {
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-950 text-gray-400 py-12">
-      <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <img src="@/assets/logo.png" alt="LTS Venture" class="w-32 mb-4" />
-            <p class="text-sm">
-              Empowering communities through innovation and sustainable
-              development since 1973.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-white font-bold mb-4">Quick Links</h4>
-            <ul class="space-y-2 text-sm">
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Our Services</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Projects</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Careers</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-white font-bold mb-4">Services</h4>
-            <ul class="space-y-2 text-sm">
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Village Banking</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >LTS Growth</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Lan Xang Banker</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Training Programs</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-white font-bold mb-4">Connect</h4>
-            <div class="flex gap-3 mb-4">
-              <UButton
-                icon="i-lucide-facebook"
-                size="sm"
-                color="neutral"
-                variant="soft"
-                square
-              />
-              <UButton
-                icon="i-lucide-twitter"
-                size="sm"
-                color="neutral"
-                variant="soft"
-                square
-              />
-              <UButton
-                icon="i-lucide-linkedin"
-                size="sm"
-                color="neutral"
-                variant="soft"
-                square
-              />
-              <UButton
-                icon="i-lucide-instagram"
-                size="sm"
-                color="neutral"
-                variant="soft"
-                square
-              />
-            </div>
-            <p class="text-sm">
-              <UIcon name="i-lucide-mail" class="inline w-4 h-4" />
-              info@ltsventure.com
-            </p>
-          </div>
-        </div>
-        <div class="border-t border-gray-800 pt-8 text-center text-sm">
-          <p>
-            &copy; {{ new Date().getFullYear() }} LTS Venture. All rights
-            reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
